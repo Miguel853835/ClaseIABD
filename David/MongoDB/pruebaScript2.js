@@ -11,4 +11,4 @@ for (let i = 11000; i < 1000000; i++) {
     print(i);
 }
 
-print("100000 estudiantes insertados correctamente.");
+print("100000 estudiantes insertados correctamente."); MONDONGO
