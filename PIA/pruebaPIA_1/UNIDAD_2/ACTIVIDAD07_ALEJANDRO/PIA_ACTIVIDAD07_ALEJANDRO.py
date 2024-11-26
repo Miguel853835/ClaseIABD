@@ -72,11 +72,10 @@ def alternar_imagen():
 
 def cargar_imagen(path, ancho, alto):
     imagen = Image.open(path)
-    imagen = imagen.resize((ancho, alto), Image.Resampling.LANCZOS)  # Redimensionar
+    imagen = imagen.resize((ancho, alto), Image.Resampling.LANCZOS)
     return ImageTk.PhotoImage(imagen)
 
 def obtener_imagenes_dinamicamente(directorio):
-    
     extensiones_validas = ('.png', '.jpg')
     return [
         os.path.join(directorio, archivo)
